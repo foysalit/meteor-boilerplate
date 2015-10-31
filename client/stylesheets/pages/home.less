@@ -1,0 +1,102 @@
+.ui.hidden.menu {
+  display: none;
+}
+
+.page-content {
+  padding-top: 15px;
+}
+
+.masthead{
+  .logo.item img {
+    margin-right: 1em;
+  }
+  .ui.menu .right.item .button {
+    margin-left: 0.5em;
+  }
+}
+
+.ui.vertical.segment.home-panel {
+    min-height: 700px;
+    padding: 1em 0em;
+    margin-top: -15px;
+
+    h1.ui.header {
+      margin-top: 3em;
+      margin-bottom: 0em;
+      font-size: 4em;
+      font-weight: normal;
+    }
+    h2 {
+      font-size: 1.7em;
+      font-weight: normal;
+    }
+}
+
+.quote.stripe.segment {
+  padding: 0em;
+}
+.quote.stripe.segment .grid .column {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.footer.segment {
+  padding: 5em 0em;
+}
+
+.ui.menu.secondary {
+  .toc.item {
+    display: none;
+  }
+
+  .right.item {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.ui.vertical.stripe {
+  padding: 8em 0em;
+  
+  h3 {
+    font-size: 2em;
+  }
+  .button + h3,
+   p + h3 {
+    margin-top: 3em;
+  }
+  .floated.image {
+    clear: both;
+  }
+  p {
+    font-size: 1.33em;
+  }
+  .horizontal.divider {
+    margin: 3em 0em;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .ui.fixed.menu {
+    display: none !important;
+  }
+  .ui.secondary.menu{
+    .item, .menu {
+      display: none !important;
+    }
+    .toc.item {
+      display: block !important;
+    }
+  }
+
+  .ui.vertical.segment.home-panel {
+    h1.ui.header {
+      font-size: 2em;
+      margin-top: 1.5em;
+    }
+    h2 {
+      margin-top: 0.5em;
+      font-size: 1.5em;
+    }
+  }
+}

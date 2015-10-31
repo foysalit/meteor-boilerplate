@@ -1,0 +1,41 @@
+<template name="menus">
+  <!-- Following Menu -->
+  <div class="ui large top fixed hidden menu">
+    <div class="ui container">
+      <a class="{{ isActiveRoute regex='home' }} item" href="/">Home</a>
+      {{#if currentUser}}
+        <a href="{{ pathFor 'dashboard' }}" class="{{ isActiveRoute regex='dashboard' }} item">Dashboard</a>
+        <div class="right item">
+          <a href="#" class="ui button" data-action="logout">
+            Sign Out
+          </a>
+        </div>
+
+      {{else}}
+        <div class="right menu">
+          <div class="item">
+            <a href="{{ pathFor 'atSignIn' }}" class="ui button">Log in</a>
+          </div>
+          <div class="item">
+            <a href="{{ pathFor 'atSignUp' }}" class="ui primary button">Sign Up</a>
+          </div>
+        </div>
+      {{/if}}
+    </div>
+  </div>
+
+  <!-- Sidebar Menu -->
+  <div class="ui vertical inverted sidebar menu">
+    <a class="{{ isActiveRoute regex='home' }} item" href="/">Home</a>
+    
+    {{#if currentUser}}
+      <a href="{{ pathFor 'dashboard' }}" class="{{ isActiveRoute regex='dashboard' }} item">Dashboard</a>
+      <a href="#" class="item" data-action="logout">
+        Sign Out
+      </a>
+    {{else}}
+      <a href="{{ pathFor 'atSignIn' }}" class="item">Login</a>
+      <a href="{{ pathFor 'atSignUp' }}" class="item">Signup</a>
+    {{/if}}
+  </div>
+</template>

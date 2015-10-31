@@ -1,14 +1,20 @@
 <template name="dashboard">
-  <div class="template-dashboard">
+  <div class="ui container template-dashboard">
     <div class="page-header">
       <h1>Dashboard</h1>
     </div>
 
-    <ul class="list-group">
+    <div class="ui middle aligned divided list">
       {{#each items}}
-        <li class="list-group-item">{{ name }} <span class="label label-default">{{ rating }}</span></li>
+        <div class="item">
+          <i class="large checkmark box middle aligned icon"></i>
+          <div class="content">
+            <div class="header">{{ name }}</div>
+            <div class="description">Rating: {{ rating }}</div>
+          </div>
+        </div>
       {{/each}}
-    </ul>
+    </div>
 
   </div>
 </template>
