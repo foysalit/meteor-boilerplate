@@ -1,6 +1,6 @@
-# meteor-boilerplate
+# meteor-boilerplate - Semantic UI version
 
-A starting point for MeteorJS applications. Includes iron-router, Bootstrap 3, Font Awesome, LESS and more.
+A starting point for MeteorJS applications. Includes iron-router, Semantic UI, LESS and more.
 
 * [Included Packages](#included-packages)
 * [Installation](#installation)
@@ -12,6 +12,10 @@ A starting point for MeteorJS applications. Includes iron-router, Bootstrap 3, F
 
 ## <a name="included-packages"></a> Included Packages
 
+* Semantic UI:
+  * [semantic:ui](https://atmospherejs.com/semantic/ui)
+  * [useraccounts:semantic-ui](https://github.com/meteor-useraccounts/semantic-ui/)
+  * [fabienb4:autoform-semantic-ui](https://github.com/englue/meteor-publish-composite)
 * Collections:
   * [dburles:collection-helpers](https://github.com/dburles/meteor-collection-helpers)
   * [matb33:collection-hooks](https://github.com/matb33/meteor-collection-hooks)
@@ -21,14 +25,13 @@ A starting point for MeteorJS applications. Includes iron-router, Bootstrap 3, F
   * [zimme:iron-router-active](https://github.com/zimme/meteor-iron-router-active)
   * [yasinuslu:blaze-meta](https://github.com/yasinuslu/blaze-meta)
 * Authentication
-  * [splendido:accounts-templates-bootstrap](https://github.com/splendido/accounts-templates-bootstrap)
+  * [Meteor User Accounts](https://github.com/meteor-useraccounts/core)
   * [alanning:roles](https://github.com/alanning/meteor-roles)
 * Seed Data
   * [dburles:factory](https://github.com/percolatestudio/meteor-factory)
   * [anti:fake](https://github.com/anticoders/meteor-fake/)
 * [Less](http://lesscss.org)
-  * [Bootstrap](http://getbootstrap.com)
-  * [Font Awesome](http://fontawesome.io)
+  * [flemay:less-autoprefixer](https://atmospherejs.com/flemay/less-autoprefixer)
 * Misc:
   * [Moment.js](http://momentjs.com/)
   * [Underscore.js](http://underscorejs.org/)
@@ -40,6 +43,10 @@ A starting point for MeteorJS applications. Includes iron-router, Bootstrap 3, F
 1. Clone this repo to `<yourapp>`
 
   `git clone https://github.com/Differential/meteor-boilerplate.git <yourapp>`
+
+1. Checkout the `semantic-ui` branch 
+
+  `git checkout semantic-ui`
 
 2. Remove `.git`
 
